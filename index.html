@@ -289,12 +289,14 @@
       max-height: 90vh;
       border-radius: 8px;
       object-fit: contain;
+      pointer-events: none;
     }
 
     .lightbox-close {
       position: absolute; top: 16px; right: 20px;
       color: white; font-size: 30px; cursor: pointer;
       background: none; border: none; line-height: 1;
+      z-index: 1000;
     }
   </style>
 </head>
@@ -368,8 +370,8 @@
   </div>
 
   <!-- ── LIGHTBOX ── -->
-  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-    <button class="lightbox-close">×</button>
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">×</button>
     <img id="lightbox-img" src="" alt="">
   </div>
 
