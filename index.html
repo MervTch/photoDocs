@@ -65,8 +65,8 @@
     }
 
     .profile-image {
-      width: clamp(72px, 22vw, 160px);
-      height: clamp(88px, 27vw, 170px);
+      width: clamp(64px, 18vw, 160px);
+      height: clamp(78px, 22vw, 170px);
       border-radius: 12px;
       object-fit: cover;
       flex-shrink: 0;
@@ -82,27 +82,29 @@
     }
 
     .profile-name {
-      font-size: clamp(14px, 4vw, 20px);
+      font-size: clamp(13px, 3vw, 20px);
       font-weight: 700;
       display: flex;
       align-items: center;
       gap: 4px;
       color: var(--text-primary);
+      white-space: nowrap;
     }
 
     .verified-icon { width: 1em; height: 1em; color: #3b82f6; flex-shrink: 0; }
 
     .profile-location {
-      font-size: clamp(11px, 3vw, 14px);
+      font-size: clamp(9px, 2.1vw, 14px);
       color: var(--text-tertiary);
       display: flex;
       align-items: center;
       gap: 4px;
+      white-space: nowrap;
     }
 
     .location-icon { width: 1em; height: 1em; flex-shrink: 0; }
 
-    .profile-title { font-size: clamp(11px, 3vw, 14px); font-weight: 500; color: var(--text-secondary); margin-top: 4px; }
+    .profile-title { font-size: clamp(9px, 2.1vw, 14px); font-weight: 500; color: var(--text-secondary); margin-top: 4px; }
 
     .button-group {
       display: flex;
@@ -115,11 +117,11 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: clamp(4px, 1.5vw, 8px);
-      padding: clamp(5px, 1.8vw, 8px) clamp(8px, 3vw, 16px);
-      font-size: clamp(10px, 2.8vw, 14px);
+      gap: clamp(3px, 1vw, 8px);
+      padding: clamp(4px, 1.4vw, 8px) clamp(6px, 2.2vw, 16px);
+      font-size: clamp(9px, 2vw, 14px);
       font-weight: 500;
-      border-radius: clamp(5px, 1.5vw, 8px);
+      border-radius: clamp(5px, 1.2vw, 8px);
       text-decoration: none;
       transition: all 0.2s ease;
       cursor: pointer;
